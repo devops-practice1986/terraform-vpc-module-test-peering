@@ -6,7 +6,10 @@ module "vpc" {
   environment                   = var.environment
   common_tags                   = var.common_tags
   public_subnet_cidrs           = var.public_subnet_cidrs
+  #public_subnet_tags            = var.public_subnet_tags
   private_subnet_cidrs          = var.private_subnet_cidrs
+  #private_subnet_tags           = var.private_subnet_tags
   database_private_subnet_cidrs = var.database_private_subnet_cidrs
+  #database_private_subnet_tags  = var.database_private_subnet_tags
   is_peering_required           = true
 }
